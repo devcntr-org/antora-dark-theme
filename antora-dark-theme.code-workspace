@@ -1,0 +1,32 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.associations": {
+      "*.hbs": "handlebars"
+    },
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "[css]": {
+      "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[yaml]": {
+      "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "asciidoc.preview.style": "",
+    "asciidoc.preview.useEditorStyle": true
+  },
+  "extensions": {
+    "recommendations": [
+      "asciidoctor.asciidoctor-vscode",
+      "redhat.vscode-yaml",
+      "esbenp.prettier-vscode"
+    ]
+  }
+}
