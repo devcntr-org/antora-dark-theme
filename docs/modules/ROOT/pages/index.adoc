@@ -1,0 +1,78 @@
+= Antora Dark Theme Demo
+:navtitle: Home
+:description: A comprehensive demonstration of the Antora Dark Theme styling.
+
+Welcome to the *Antora Dark Theme* demonstration site.
+This documentation showcases all the UI elements styled by the dark theme.
+
+== Getting Started
+
+Use the *theme toggle button* in the navbar (sun/moon icon) to switch between light and dark modes.
+
+The theme supports:
+
+* Automatic detection of your system's color scheme preference
+* Manual toggle via the navbar button
+* Persistent preference saved in your browser
+
+== Features Overview
+
+[cols="1,2"]
+|===
+| Feature | Description
+
+| xref:typography.adoc[Typography]
+| Headings, paragraphs, inline formatting, and links
+
+| xref:code-blocks.adoc[Code Blocks]
+| Syntax-highlighted source code examples
+
+| xref:admonitions.adoc[Admonitions]
+| Note, tip, warning, caution, and important blocks
+
+| xref:tables.adoc[Tables]
+| Various table layouts and styles
+
+| xref:blocks.adoc[Blocks & Quotes]
+| Sidebars, examples, quotes, and literal blocks
+
+| xref:lists.adoc[Lists]
+| Ordered, unordered, and description lists
+
+| xref:images.adoc[Images & Media]
+| Image blocks and figure captions
+|===
+
+== Quick Example
+
+Here's a quick code example:
+
+[source,javascript]
+----
+// Toggle dark mode
+function toggleTheme() {
+  document.documentElement.classList.toggle('dark-theme');
+}
+----
+
+TIP: Click the toggle button in the navbar to see the theme change in action!
+
+== Installation
+
+Install via npm or pnpm:
+
+[source,bash]
+----
+pnpm add -D antora-dark-theme
+----
+
+Then configure your `antora-playbook.yml`:
+
+[source,yaml]
+----
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  supplemental_files: ./node_modules/antora-dark-theme/supplemental-ui
+----

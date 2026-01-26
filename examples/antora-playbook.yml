@@ -3,16 +3,16 @@
 
 site:
   title: My Documentation Site
-  # Uncomment to set a start page:
-  # start_page: component-name::index.adoc
+  # url: https://docs.example.com
+  # start_page: component::index.adoc
 
 content:
   sources:
-    # Example: Local documentation source
+    # Local documentation source
     - url: .
       branches: HEAD
       start_path: docs
-    # Example: Remote Git repository
+    # Remote Git repository (uncomment to use)
     # - url: https://github.com/your-org/your-repo.git
     #   branches: [main, v*]
     #   start_path: docs
@@ -22,17 +22,14 @@ ui:
     # Use the official Antora default UI bundle
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
-  # Point to your local copy of the supplemental-ui folder
-  supplemental_files: ./supplemental-ui
+  # If using npm: ./node_modules/antora-dark-theme/supplemental-ui
+  # If copied directly: ./supplemental-ui
+  supplemental_files: ./node_modules/antora-dark-theme/supplemental-ui
 
-# Optional: Configure output directory
 output:
   dir: ./build/site
 
-# Optional: Configure asciidoc extensions
 asciidoc:
   attributes:
-    # Enable source highlighting
     source-highlighter: highlight.js
-    # Add custom attributes here
-    # my-attribute: value
+    icons: font

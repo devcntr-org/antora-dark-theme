@@ -6,12 +6,14 @@
 :source-highlighter: highlight.js
 :url-antora: https://antora.org
 :url-antora-ui: https://gitlab.com/antora/antora-ui-default
+:url-demo: https://the-dev-center.github.io/antora-dark-theme
 
 A dark mode supplemental UI theme for {url-antora}[Antora] documentation sites.
 This theme layers on top of the {url-antora-ui}[Antora Default UI] without requiring modifications to the base UI bundle.
 
 image::https://img.shields.io/badge/license-MIT-blue.svg[License: MIT]
 image::https://img.shields.io/badge/antora-3.x-purple.svg[Antora 3.x]
+image::https://github.com/the-dev-center/antora-dark-theme/actions/workflows/deploy.yml/badge.svg[Build Status,link=https://github.com/the-dev-center/antora-dark-theme/actions/workflows/deploy.yml]
 
 toc::[]
 
@@ -77,6 +79,10 @@ ui:
   supplemental_files: ./node_modules/antora-dark-theme/supplemental-ui
 ----
 
+== Live Demo
+
+See the dark theme in action: {url-demo}[Live Demo]
+
 == File Structure
 
 [source]
@@ -90,9 +96,17 @@ antora-dark-theme/
 │   └── partials/
 │       ├── footer-scripts.hbs  # Loads the dark mode script
 │       └── head-meta.hbs       # Loads CSS and prevents FOUC
+├── docs/                        # Demo documentation
+│   ├── antora.yml              # Component descriptor
+│   └── modules/ROOT/
+│       ├── nav.adoc            # Navigation
+│       └── pages/              # Sample pages
 ├── examples/
-│   ├── antora-playbook.yml     # Example playbook configuration
-│   └── antora-playbook-local.yml
+│   ├── antora-playbook.yml     # Example playbook (npm install)
+│   └── antora-playbook-local.yml # Example playbook (direct copy)
+├── .github/workflows/
+│   └── deploy.yml              # GitHub Pages deployment
+├── antora-playbook.yml         # Playbook for building demo site
 ├── package.json
 ├── LICENSE
 └── README.adoc

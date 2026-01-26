@@ -1,9 +1,10 @@
-# Local Development Playbook (if you copied supplemental-ui directly)
-# Use this if you copied the supplemental-ui folder into your project
+# Antora Playbook for building the Dark Theme Demo site
+# This playbook is used for local development and CI builds
 
 site:
-  title: My Documentation Site (Local)
-  # start_page: component::index.adoc
+  title: Antora Dark Theme Demo
+  url: https://the-dev-center.github.io/antora-dark-theme
+  start_page: theme-demo::index.adoc
 
 content:
   sources:
@@ -15,7 +16,6 @@ ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
-  # Direct copy approach - supplemental-ui folder in project root
   supplemental_files: ./supplemental-ui
 
 output:
