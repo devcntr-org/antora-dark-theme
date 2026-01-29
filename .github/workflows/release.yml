@@ -75,4 +75,6 @@ jobs:
 
       - name: Publish to npm (trusted publishing)
         if: ${{ !contains(github.ref, '-') }}
-        run: npm publish --access public --provenance
+        run: |
+          rm -f *.tgz
+          npm publish --access public --provenance
