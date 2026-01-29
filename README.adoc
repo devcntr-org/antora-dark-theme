@@ -26,6 +26,15 @@ toc::[]
 * **Non-invasive** - Works as a supplemental UI overlay; no need to fork or rebuild the Antora default UI bundle
 * **Comprehensive styling** - Covers navbar, navigation panels, content area, code blocks, tables, admonition blocks, footer, and more
 
+== Help Get Dark Mode into Antora
+
+We've submitted this theme for inclusion in the official Antora Default UI.
+If you'd like to see native dark mode support in Antora, please upvote the feature request:
+
+* **https://gitlab.com/antora/antora-ui-default/-/issues/216[icon:thumbs-up[\] Upvote: Feature Request #216 - Dark Mode]**
+
+Your support helps the Antora team prioritize this feature!
+
 == Quick Start
 
 === Method 1: Copy supplemental-ui folder

@@ -7,3 +7,4 @@
 * xref:blocks.adoc[Blocks & Quotes]
 * xref:lists.adoc[Lists]
 * xref:images.adoc[Images & Media]
+* xref:extensions.adoc[Extensions]

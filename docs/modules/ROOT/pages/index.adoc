@@ -33,6 +33,9 @@ TIP: Use the *theme toggle button* in the navbar (sun/moon icon) to switch betwe
 
 | xref:images.adoc[Images & Media]
 | Image blocks and figure captions
+
+| xref:extensions.adoc[Extensions]
+| Tabs, diagrams, math, embeds, and third-party integrations
 |===
 
 == Quick Code Example

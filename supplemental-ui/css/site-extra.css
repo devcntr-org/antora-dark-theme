@@ -487,3 +487,130 @@ html.dark-theme .nav-panel-explore .versions .is-current {
   background-color: #2c2e33;
   color: #ffffff;
 }
+
+/* Reduce strong inner shadow on component/version dropdown */
+html.dark-theme .nav-panel-explore .components,
+html.dark-theme .nav-panel-explore .component,
+html.dark-theme .nav-panel-explore .versions {
+  box-shadow: none;
+}
+
+html.dark-theme .nav-panel-explore .context .selector {
+  box-shadow: none;
+}
+
+html.dark-theme .nav-panel-explore .context .selector .components {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Float group layout for alternating content */
+.float-group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.float-group .left {
+  float: left;
+  max-width: 45%;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.float-group .right {
+  float: right;
+  max-width: 45%;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.float-group .right.text-right {
+  text-align: right;
+}
+
+/* Keyboard, button, and menu macros */
+html.dark-theme kbd {
+  background-color: #2c2e33;
+  color: #e9ecef;
+  border-color: #495057;
+  box-shadow: 0 1px 0 #495057;
+}
+
+html.dark-theme .button,
+html.dark-theme .btn {
+  background-color: #2c2e33;
+  color: #e9ecef;
+  border-color: #495057;
+}
+
+html.dark-theme .menuseq,
+html.dark-theme .menu {
+  color: #c1c2c5;
+}
+
+html.dark-theme .menuseq .caret,
+html.dark-theme .menuseq .submenu::before {
+  color: #909296;
+}
+
+/* Tabs extension support */
+html.dark-theme .tabs ul {
+  background-color: #1f2125;
+  border-color: #373a40;
+}
+
+html.dark-theme .tabs ul li {
+  background-color: #25262b;
+  border-color: #373a40;
+  color: #c1c2c5;
+}
+
+html.dark-theme .tabs ul li.is-active,
+html.dark-theme .tabs ul li[aria-selected="true"] {
+  background-color: #141517;
+  color: #ffffff;
+  border-bottom-color: #141517;
+}
+
+html.dark-theme .tabs ul li:hover {
+  background-color: #2c2e33;
+  color: #ffffff;
+}
+
+html.dark-theme .tabpanel,
+html.dark-theme .tabs-content {
+  background-color: #141517;
+  border-color: #373a40;
+}
+
+/* STEM / Math rendering */
+html.dark-theme .stemblock,
+html.dark-theme .mathblock {
+  color: #e9ecef;
+}
+
+/* Icon roles */
+html.dark-theme .icon.red,
+html.dark-theme [role="red"] {
+  color: #ff6b6b;
+}
+
+html.dark-theme .icon.green,
+html.dark-theme [role="green"] {
+  color: #51cf66;
+}
+
+html.dark-theme .icon.yellow,
+html.dark-theme [role="yellow"] {
+  color: #fcc419;
+}
+
+html.dark-theme .icon.blue,
+html.dark-theme [role="blue"] {
+  color: #4dabf7;
+}
+
+/* Video embeds wrapper */
+html.dark-theme .videoblock {
+  background-color: transparent;
+}
