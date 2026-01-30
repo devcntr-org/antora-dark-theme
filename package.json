@@ -26,13 +26,14 @@
     "clean": "rimraf build .cache"
   },
   "devDependencies": {
-    "@antora/lunr-extension": "^1.0.0-alpha.8",
+    "@asciidoctor/tabs": "^1.0.0-beta.6",
     "antora": "^3.1.14",
     "http-server": "^14.1.1",
     "rimraf": "^6.0.1"
   },
   "packageManager": "pnpm@10.28.1",
   "dependencies": {
+    "@asciidoctor/tabs": "1.0.0-beta.6",
     "biome": "^0.3.3"
   }
 }

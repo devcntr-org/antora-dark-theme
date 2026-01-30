@@ -22,6 +22,8 @@ output:
   dir: ./build/site
 
 asciidoc:
+  extensions:
+    - "@asciidoctor/tabs"
   attributes:
     source-highlighter: highlight.js
     icons: font

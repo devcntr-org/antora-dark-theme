@@ -8,6 +8,10 @@ There are several ways to add the dark theme to your Antora project.
 
 Install directly from the GitHub repository:
 
+[tabs]
+====
+pnpm::
++
 [source,bash]
 ----
 # Latest version
@@ -17,12 +21,20 @@ pnpm add -D github:the-dev-center/antora-dark-theme
 pnpm add -D github:the-dev-center/antora-dark-theme#v0.1.0
 ----
 
-Or with npm:
-
+npm::
++
 [source,bash]
 ----
 npm install --save-dev github:the-dev-center/antora-dark-theme
 ----
+
+yarn::
++
+[source,bash]
+----
+yarn add -D github:the-dev-center/antora-dark-theme
+----
+====
 
 Then configure your `antora-playbook.yml`:
 
@@ -39,12 +51,29 @@ ui:
 
 If the package is published to npm:
 
+[tabs]
+====
+pnpm::
++
 [source,bash]
 ----
 pnpm add -D antora-dark-theme
-# or
+----
+
+npm::
++
+[source,bash]
+----
 npm install --save-dev antora-dark-theme
 ----
+
+yarn::
++
+[source,bash]
+----
+yarn add -D antora-dark-theme
+----
+====
 
 Same playbook configuration as Method 1.
 
@@ -52,10 +81,29 @@ Same playbook configuration as Method 1.
 
 Download a specific release directly:
 
+[tabs]
+====
+pnpm::
++
 [source,bash]
 ----
 pnpm add -D https://github.com/the-dev-center/antora-dark-theme/releases/download/v0.1.0/antora-dark-theme-0.1.0.tgz
 ----
+
+npm::
++
+[source,bash]
+----
+npm install --save-dev https://github.com/the-dev-center/antora-dark-theme/releases/download/v0.1.0/antora-dark-theme-0.1.0.tgz
+----
+
+yarn::
++
+[source,bash]
+----
+yarn add -D https://github.com/the-dev-center/antora-dark-theme/releases/download/v0.1.0/antora-dark-theme-0.1.0.tgz
+----
+====
 
 == Method 4: Copy supplemental-ui Folder
 

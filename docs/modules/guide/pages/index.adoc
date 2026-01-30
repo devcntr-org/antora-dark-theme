@@ -18,10 +18,29 @@ It layers on top of the https://gitlab.com/antora/antora-ui-default[Antora Defau
 
 The fastest way to get started:
 
+[tabs]
+====
+pnpm::
++
 [source,bash]
 ----
 pnpm add -D github:the-dev-center/antora-dark-theme
 ----
+
+npm::
++
+[source,bash]
+----
+npm install --save-dev github:the-dev-center/antora-dark-theme
+----
+
+yarn::
++
+[source,bash]
+----
+yarn add -D github:the-dev-center/antora-dark-theme
+----
+====
 
 Then add to your `antora-playbook.yml`:
 
