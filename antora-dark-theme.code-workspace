@@ -4,29 +4,19 @@
       "path": "."
     }
   ],
+
   "settings": {
-    "files.associations": {
-      "*.hbs": "handlebars"
-    },
-    "editor.tabSize": 2,
-    "editor.formatOnSave": true,
-    "[css]": {
-      "editor.defaultFormatter": "vscode.css-language-features"
-    },
-    "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[yaml]": {
-      "editor.defaultFormatter": "redhat.vscode-yaml"
-    },
-    "asciidoc.preview.style": "",
-    "asciidoc.preview.useEditorStyle": true
-  },
-  "extensions": {
-    "recommendations": [
-      "asciidoctor.asciidoctor-vscode",
-      "redhat.vscode-yaml",
-      "esbenp.prettier-vscode"
-    ]
+    // See `.vscode/settings.json` and `.vscode/extensions.json` for more settings.
+
+  	// Tell the YAML parser to not lint the GitHub FUNDING.yml file.
+  	"yaml.schemas": {
+	  	"https://json.schemastore.org/github-funding.json": "/.github/FUNDING.yml"
+  	},
+
+  	// Change merge editor colors to not be so jarring
+  	"workbench.colorCustomizations": {
+	  	"mergeEditor.conflict.unhandledFocused.border": "#00945b",
+	  	"mergeEditor.conflict.unhandledUnfocused.border": "#00784a"
+  	},
   }
 }
