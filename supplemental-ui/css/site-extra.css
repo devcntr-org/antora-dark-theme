@@ -432,12 +432,47 @@ html.dark-theme .home-link {
 }
 
 /* Dark mode icon fixes for navigation panels */
-/* These icons use dark SVG background images that need to be inverted in dark mode */
+/* Use masks to force icons to absolute colors so they don't break if base SVG colors change */
 html.dark-theme .nav-toggle,
 html.dark-theme .home-link,
 html.dark-theme .nav-item-toggle,
 html.dark-theme .nav-menu-toggle {
-  filter: invert(1);
+  background-image: none !important;
+  background-color: #c1c2c5; /* Hardcoded light grey to match theme text */
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  filter: none !important;
+}
+
+html.dark-theme .nav-toggle {
+  -webkit-mask-image: url(../img/menu.svg);
+  mask-image: url(../img/menu.svg);
+  -webkit-mask-size: 49%;
+  mask-size: 49%;
+}
+
+html.dark-theme .home-link {
+  -webkit-mask-image: url(../img/home-o.svg);
+  mask-image: url(../img/home-o.svg);
+  -webkit-mask-size: normal;
+  mask-size: normal;
+}
+
+html.dark-theme .nav-item-toggle {
+  -webkit-mask-image: url(../img/caret.svg);
+  mask-image: url(../img/caret.svg);
+  -webkit-mask-size: 50%;
+  mask-size: 50%;
+  opacity: 0.8;
+}
+
+html.dark-theme .nav-menu-toggle {
+  -webkit-mask-image: url(../img/octicons-16.svg#view-unfold);
+  mask-image: url(../img/octicons-16.svg#view-unfold);
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
 }
 
 /* Component/version selector in navigation */
@@ -457,7 +492,11 @@ html.dark-theme .nav-panel-explore .context .version:hover {
 
 /* Chevron icon in component/version selector */
 html.dark-theme .nav-panel-explore .context .version::after {
-  filter: invert(1);
+  background-image: none !important;
+  background-color: #ffffff; /* Brighter white for the context selector */
+  -webkit-mask: url(../img/chevron.svg) no-repeat 100%/auto 100%;
+  mask: url(../img/chevron.svg) no-repeat 100%/auto 100%;
+  filter: none !important;
 }
 
 /* Component/version dropdown menu and parent containers */
