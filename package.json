@@ -9,10 +9,10 @@
     "documentation",
     "asciidoc"
   ],
-  "homepage": "https://the-dev-center.github.io/antora-dark-theme",
+  "homepage": "https://devcntr-org.github.io/antora-dark-theme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/the-dev-center/antora-dark-theme.git"
+    "url": "git+https://github.com/devcntr-org/antora-dark-theme.git"
   },
   "license": "MIT",
   "author": "The Dev Center",
@@ -35,3 +35,4 @@
   },
   "packageManager": "pnpm@10.28.1"
 }
+
