@@ -17,7 +17,7 @@ This document provides guidelines and information for contributors.
 +
 [source,bash]
 ----
-git clone https://github.com/the-dev-center/antora-dark-theme.git
+git clone https://github.com/devcntr-app/antora-dark-theme.git
 cd antora-dark-theme
 ----
 
@@ -104,3 +104,4 @@ When reporting issues, please include:
 == Questions?
 
 Feel free to open an issue for any questions about contributing.
+

@@ -43,7 +43,7 @@ Text can be formatted in various ways:
 
 Visit the https://antora.org[Antora website] for more information.
 
-Here's a link to https://github.com/the-dev-center/antora-dark-theme[this project on GitHub].
+Here's a link to https://github.com/devcntr-app/antora-dark-theme[this project on GitHub].
 
 === Internal Cross-References
 
@@ -89,3 +89,4 @@ Click the btn:[Submit] button to continue.
 This text has a footnote.footnote:[This is the footnote content.]
 
 Another footnote reference.footnote:note2[Second footnote with a reference ID.]
+

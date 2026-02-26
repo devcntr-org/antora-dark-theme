@@ -3,7 +3,7 @@
 
 site:
   title: Antora Dark Theme
-  url: https://the-dev-center.github.io/antora-dark-theme
+  url: https://devcntr-app.github.io/antora-dark-theme
   start_page: antora-dark-theme:guide:index.adoc
 
 content:
@@ -27,3 +27,4 @@ asciidoc:
   attributes:
     source-highlighter: highlight.js
     icons: font
+

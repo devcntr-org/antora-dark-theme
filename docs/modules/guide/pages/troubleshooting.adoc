@@ -133,9 +133,10 @@ observer.observe(document.documentElement, { attributes: true });
 
 If your issue isn't covered here:
 
-. Check the https://github.com/the-dev-center/antora-dark-theme/issues[GitHub Issues] for similar problems
+. Check the https://github.com/devcntr-app/antora-dark-theme/issues[GitHub Issues] for similar problems
 . Open a new issue with:
 ** Browser and version
 ** Antora version
 ** Steps to reproduce
 ** Browser console errors (if any)
+
