@@ -8,7 +8,7 @@ Dark mode supplemental UI for [Antora](https://antora.org) documentation sites.
 ## Install
 
 ```bash
-pnpm add -D github:devcntr-org/antora-dark-theme
+pnpm add -D github:asciidoc-supplemental/antora-dark-theme
 ```
 
 Then configure your `antora-playbook.yml`:
@@ -31,8 +31,10 @@ ui:
 
 ## Documentation
 
-Full documentation and live demo: **https://devcntr-org.github.io/antora-dark-theme**
+Full documentation and live demo: **https://devcentr.github.io/antora-dark-theme**
 
 ## License
 
 [MIT](LICENSE)
+
+
