@@ -7,11 +7,13 @@ Dark mode supplemental UI for [Antora](https://antora.org) documentation sites.
 
 ## Install
 
+Install the published package as a development dependency:
+
 ```bash
-pnpm add -D github:antora-supplemental/antora-dark-theme
+npm install --save-dev antora-dark-theme
 ```
 
-Then configure your `antora-playbook.yml`:
+Then configure your playbook file(s) (typically `antora-playbook.yml`) to load the supplemental UI from `node_modules`:
 
 ```yaml
 ui:
@@ -33,8 +35,8 @@ ui:
 
 Full documentation and live demo: **https://devcentr.github.io/antora-dark-theme**
 
+For other installation options, including the pre-built UI bundle and copying `supplemental-ui` directly, see the [official README.adoc](https://github.com/antora-supplemental/antora-dark-theme/README.adoc).
+
 ## License
 
 [MIT](LICENSE)
-
-
