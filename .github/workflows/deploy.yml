@@ -36,14 +36,14 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'pnpm'
+          node-version: "20"
+          cache: "pnpm"
 
       - name: Install dependencies
         run: pnpm install
 
       - name: Build Antora site
-        run: pnpm build
+        run: pnpm build:online
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -51,7 +51,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './build/site'
+          path: "./build/site"
 
   deploy:
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
