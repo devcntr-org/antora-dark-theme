@@ -10,7 +10,17 @@ Dark mode supplemental UI for [Antora](https://antora.org) documentation sites.
 Install the published package as a development dependency:
 
 ```bash
+# npm
 npm install --save-dev antora-dark-theme
+
+# pnpm
+pnpm add -D antora-dark-theme
+
+# yarn
+yarn add -D antora-dark-theme
+
+# bun
+bun add -d antora-dark-theme
 ```
 
 Then configure your playbook file(s) (typically `antora-playbook.yml`) to load the supplemental UI from `node_modules`:
