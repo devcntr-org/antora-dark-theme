@@ -6,6 +6,13 @@ Each release has a short summary below; link:changelog-details/[per-date detaile
 The format is based on https://keepachangelog.com/en/1.1.0/[Keep a Changelog],
 and this project adheres to https://semver.org/spec/v2.0.0.html[Semantic Versioning].
 
+== Org and migration
+
+The https://github.com/antora-supplemental[antora-supplemental] organization was created on *2026-03-04* (GitHub API `orgs/antora-supplemental`, `created_at`: `2026-03-04T10:55:15Z`).
+This repository moved here from the prior dev-centr / the-dev-center GitHub context; a lot of follow-up work happened between that date and the March 26 release entry below, not every change has its own dated file.
+
+* link:changelog-details/2026-03-04%20-%20antora-supplemental%20org%20and%20repository%20migration.adoc[Background — org creation and migration]
+
 == [0.1.5] - 2026-03-26
 
 VCS navbar logo (Simple Icons–style assets, local build and missing-Download fallbacks), npm `author` for the next registry publish, expanded VCS guide, and README line-ending cleanup.
