@@ -34,7 +34,7 @@ toc::[]
 We've submitted this theme for inclusion in the official Antora Default UI.
 If you'd like to see native dark mode support in Antora, please upvote the feature request:
 
-* **https://gitlab.com/antora/antora-ui-default/-/issues/216[icon:thumbs-up[\] Upvote: Feature Request #216 - Dark Mode]**
+* **link:https://gitlab.com/antora/antora-ui-default/-/issues/216[icon:thumbs-up[] Upvote: Feature Request #216 - Dark Mode]**
 
 Your support helps the Antora team prioritize this feature!
 
