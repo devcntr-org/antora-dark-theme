@@ -46,6 +46,8 @@ jobs:
           playbook: antora-playbook.yml
           output_dir: build/site
           skip_install: true
+          skip_pnpm_setup: true
+          skip_node_setup: true
           fetch: true
 
       - name: Setup Pages
