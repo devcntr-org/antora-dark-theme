@@ -11,8 +11,6 @@ node_modules/
 
 # IDE files
 .idea/
-# Keep the project workspace file
-!antora-dark-theme.code-workspace
 
 # OS files
 .DS_Store

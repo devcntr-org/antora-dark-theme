@@ -54,4 +54,13 @@
   "scm.alwaysShowRepositories": true,
   "scm.providerCountBadge": "auto",
   "git.closeDiffOnOperation": true, // This closes the code 'diff' after you add it to a commit
+
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-funding.json": "/.github/FUNDING.yml"
+  },
+
+  "workbench.colorCustomizations": {
+    "mergeEditor.conflict.unhandledFocused.border": "#00945b",
+    "mergeEditor.conflict.unhandledUnfocused.border": "#00784a"
+  }
 }
