@@ -8,6 +8,13 @@ and this project adheres to https://semver.org/spec/v2.0.0.html[Semantic Version
 
 Entries below are in **chronological order** by date: prior release, then the **2026-03-04** org creation and repository move, then the next release.
 
+== [1.0.5] - 2026-04-26
+
+* *Debranded “doc site” package:* The theme is now a generic clone of the former FoodTruckNerdz layout: all partials, `site-doc-layout.css` (renamed from `site-ftn-docs.css`), `site-adt-accordion.js` (breadcrumb pickers; renamed from `site-ftn-accordion.js`), `img/logo.svg`, and neutral defaults in `header-content.hbs` (playbook `site.keys` for `site_home_url`, `header_doc_title`, `github_profile_url`, `footer_note`). Public CSS/JS class and ID hooks use the `adt-` prefix; breadcrumb kicker list IDs are `#adt-bc-proj` and `#adt-bc-ver`.
+* *FoodTruckNerdz downstream:* the https://github.com/FoodTruckNerdz/docs[docs] site keeps a branded `header-content.hbs`, `img/foodtrucknerdz.svg`, and project footer; it stays aligned with this package by not copying the full `supplemental-ui` from npm on prebuild (only `site-extra.css` and `img/` sync).
+
+link:changelog-details/2026-04-26%20-%201.0.5%20debranded%20doc%20layout%20and%20adt%20prefix.adoc[Detailed notes — 2026-04-26]
+
 == [1.0.4] - 2026-04-26
 
 * *Doc home cards fix:* `site-extra.css` no longer applies blanket dark `!important` backgrounds to `+.openblock.cards+` or `+.exampleblock.tile+` (selectors now use `+:not(.cards)+` / `+:not(.tile)+`). Tile grid and card chrome work in dark mode. Added `html.dark-theme .doc .openblock.cards > .content` grid/transparent rules where needed.

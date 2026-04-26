@@ -741,9 +741,9 @@ html.dark-theme .videoblock {
 
 /* Left nav insets: match toolbar .home-link (margin = toolbar-height / 4) so tree lines up
    with the breadcrumb row home control on wide layouts (stock default UI is 0.75rem).
-   Skip .nav-tree-only / .ftn-nav-tree-only: horizontal inset is set in site-ftn-docs.css
+   Skip .nav-tree-only / .adt-nav-tree-only: horizontal inset is set in site-doc-layout.css
    on .nav-panel-menu + vertical-only padding on the nav (avoids cascade conflicts). */
-.nav-menu:not(.nav-tree-only):not(.ftn-nav-tree-only) {
+.nav-menu:not(.nav-tree-only):not(.adt-nav-tree-only) {
   padding-left: calc(var(--toolbar-height) / 4);
   padding-right: 0.75rem;
 }
@@ -810,7 +810,7 @@ html.dark-theme .videoblock {
 }
 
 /* Doc home: .openblock.cards + .exampleblock.tile
-   Lives in supplemental (site-extra.css) so release ui-bundle.zip + FoodTruckNerdz/docs prebuild see it. */
+   Bundled in supplemental site-extra.css so Antora prebuilds pick it up. */
 :root {
   --doc-tile-radius: 0.5rem;
   --doc-tile-border-color: var(--panel-border-color);
