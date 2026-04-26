@@ -1,4 +1,3 @@
-{{! Optional: include in breadcrumbs as {{> edit-breadcrumb}}. Prefer page.editUrl (https) so VCS icon logic matches; file: only when no edit URL. }}
 {{#if (and page.editUrl (or env.FORCE_SHOW_EDIT_PAGE_LINK (not page.origin.private)))}}
     <li class="adt-breadcrumb-edit" role="presentation">
       <a class="adt-edit-inline-link" href="{{page.editUrl}}" title="Edit this page" aria-label="Edit this page">

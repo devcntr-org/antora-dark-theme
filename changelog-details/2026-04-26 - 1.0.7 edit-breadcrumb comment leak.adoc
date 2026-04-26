@@ -1,0 +1,7 @@
+= 1.0.7 — edit-breadcrumb Handlebars comment leak
+:description: Changelog detail for antora-dark-theme 1.0.7
+:navtitle: 1.0.7 edit-breadcrumb fix
+
+The first line of `supplemental-ui/partials/edit-breadcrumb.hbs` was a maintainer comment using `{{! … }}` while illustrating partial inclusion with `{{> edit-breadcrumb}}`. The inner `}}` closed the comment early; the remainder rendered as literal text in the breadcrumb bar.
+
+The partial now starts with the `{{#if …}}` block and no fragile header comment.

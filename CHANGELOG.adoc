@@ -8,6 +8,12 @@ and this project adheres to https://semver.org/spec/v2.0.0.html[Semantic Version
 
 Entries below are in **chronological order** by date: prior release, then the **2026-03-04** org creation and repository move, then the next release.
 
+== [1.0.7] - 2026-04-26
+
+* *Bugfix:* `partials/edit-breadcrumb.hbs` — remove a `{{! … }}` line that embedded `{{> …}}` example syntax. Handlebars ends `{{!` comments at the first `}}`, so part of the comment leaked as visible text before the breadcrumb *Edit* control.
+
+link:changelog-details/2026-04-26%20-%201.0.7%20edit-breadcrumb%20comment%20leak.adoc[Detailed notes — 2026-04-26]
+
 == [1.0.6] - 2026-04-26
 
 * *Release / tag:* The annotated Git tag `v1.0.5` had peeled to an older commit than the `package.json` “Release v1.0.5” commit; **1.0.6** is the corrected publish line. Push Git tag `v1.0.6` to run link:.github/workflows/release.yml[Release] (GitHub Release, `ui-bundle.zip`, npm when trusted publishing is configured).
